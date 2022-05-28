@@ -5,7 +5,8 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * Class Method Filter Annotation for Events
- * @author Hideri : 2022
+ * @author Hideri
+ * @since May 27, 2022
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EventTarget {

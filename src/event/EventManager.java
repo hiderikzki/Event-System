@@ -7,7 +7,8 @@ import java.util.stream.Collectors;
 
 /**
  * Event Utility Class for Storing Data and Calling Events
- * @author Hideri : 2022
+ * @author Hideri
+ * @since May 27, 2022
  */
 public class EventManager
 {
@@ -34,7 +35,7 @@ public class EventManager
     }
 
     /**
-     * Clear {@link #classRegistry}
+     * Clears {@link #classRegistry}
      */
     public static void clean()
     {
@@ -60,7 +61,7 @@ public class EventManager
     }
 
     /**
-     * Used for {@link #invoke(Event) invoke}
+     * Used for {@link #invoke(Event) EventManager.invoke(event)}
      * @param event Event to Check for During Filtering
      * @param methods All Target Class Methods
      * @return Filtered Class Method List
@@ -78,7 +79,7 @@ public class EventManager
      * @param methods Filtered Methods
      * @return Sorted List by Annotation Priority
      */
-    private static List<Method> prioritize( List<Method> methods)
+    private static List<Method> prioritize(List<Method> methods)
     {
         return methods.stream().sorted((m1, m2) -> {
             int p1 = m1.getAnnotation(EventTarget.class).priority();

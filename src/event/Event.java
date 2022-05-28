@@ -4,7 +4,8 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * Extensible Event Class
- * @author Hideri : 2022
+ * @author Hideri
+ * @since May 27, 2022
  */
 public class Event
 {
