@@ -8,4 +8,7 @@ import java.lang.annotation.RetentionPolicy;
  * @author Hideri : 2022
  */
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EventTarget {}
+public @interface EventTarget {
+    /** Event Execution Priority (Highest = First) */
+    int priority() default 0;
+}
