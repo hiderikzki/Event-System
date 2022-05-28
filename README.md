@@ -85,7 +85,7 @@ class EventUseClass
 {
    // Random Code...
    
-   @EventTarget
+   @EventTarget(priority=int /* optional, higher = executed earlier than other functions */)
    public void functionName(CustomEvent event)
    {
      // Changing Values (for Example)
